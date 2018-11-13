@@ -11,16 +11,18 @@ f.e sample.txt contains following words:
 <ul>London Barcelona Poland(\n)</ul>
 <ul>One Two Three(\n)</ul>
 
-As a result of the conversion, the sample.xml file will look as follows:</br>
-  <row<</br>
-    <col<London</col.></br>
-    <col<Barcelona</col.></br>
-    <col<Poland</col.></br>
-  </row<</br>
-  <row<</br>
-    <col<One</col.></br>
-    <col<Two</col.></br>
-    <col<Three</col.></br>
-  </row<</br>
-
-
+As a result of the conversion, the sample.xml file will look as follows:
+```
+  <row>
+    <col<London</col>
+    <col<Barcelona</col>
+    <col<Poland</col>
+  </row>
+  <row>
+    <col<One</col>
+    <col<Two</col>
+    <col<Three</col>
+  </row>
+```
+During converting .xml file to .txt be sure that file.xml is <b>NOT</b> in single line.</br>
+Remember the new line char (/n) after single tag.
