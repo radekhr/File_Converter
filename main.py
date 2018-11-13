@@ -1,5 +1,4 @@
 import sys
-import os
 from classes.txttoxml import Txttoxml
 from classes.xmltotxt import Xmltotxt
 
@@ -18,9 +17,8 @@ if ((len(sys.argv) == 2 )): # check nums of args in console
 					print('Invalid file format. Acceptable: .txt or .xml')
 					sys.exit(0)
 	except FileNotFoundError:
-		message = print('Sorry, but file ' + filename + ' does NOT exist in work directory')
-		print(message)		
+		print('Sorry, but file ' + filename + ' does NOT exist in work directory')	
+		sys.exit(0)	
 else:
 	print('Please write 2 args. Not less, not more.')
-	sys.exit(0)
 	

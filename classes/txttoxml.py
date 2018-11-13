@@ -12,13 +12,13 @@ class Txttoxml():
 			for line in lines:	
 				if line != '\n':		
 					words_list += line.split()
-					self.generate_xml_doc(words_list)
+					self.generate_xml_file(words_list)
 					words_list = []
-		print('Sucessfull conversion TXT->XML. File XML is located in working \
-directory. Filename: ' + self.new_filename )
+		print('Sucessfull conversion TXT->XML.\n File XML is located in working \
+directory.\n Filename: ' + self.new_filename )
 				
 		
-	def generate_xml_doc(self, words_list):
+	def generate_xml_file(self, words_list):
 		new_filename = self.change_format_to_xml()
 		with open(new_filename, 'a') as nf:
 			root = ET.Element('row')
